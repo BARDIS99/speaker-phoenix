@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SPEAKER // 30 PHOENIX DROP</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#03040a;--cyan:#39ffea;--ember:#ff3b1f;--paper:#e8f6ff;--line:rgba(57,255,234,.18)}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--paper);font-family:"Share Tech Mono",monospace;min-height:100%}
+body{background:radial-gradient(900px 500px at 10% -10%,rgba(255,59,31,.18),transparent 50%),radial-gradient(800px 400px at 90% 0%,rgba(57,255,234,.12),transparent 45%),linear-gradient(#03040a,#070814)}
+a{color:inherit;text-decoration:none}
+.scan{pointer-events:none;position:fixed;inset:0;background:repeating-linear-gradient(180deg,transparent 0 2px,rgba(0,0,0,.12) 3px);opacity:.25;z-index:40}
+header{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:16px 5vw;border-bottom:1px solid var(--line);background:#03040acc;backdrop-filter:blur(16px)}
+.brand{font-family:Orbitron,sans-serif;font-weight:900;letter-spacing:.28em;font-size:13px}
+.brand span{color:var(--ember)}
+nav{display:flex;gap:22px;font-size:11px;letter-spacing:.18em;color:#9ad}
+.hero{padding:10vh 5vw 7vh;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+h1{font-family:Orbitron,sans-serif;font-size:clamp(42px,9vw,96px);line-height:.88;font-weight:900}
+h1 i{font-style:normal;color:var(--ember);text-shadow:0 0 24px #ff3b1f88}
+.lede{margin-top:18px;max-width:480px;color:#9ec;line-height:1.7}
+.hud{border:1px solid var(--line);padding:22px;background:rgba(10,16,28,.6);box-shadow:0 0 40px #39ffea14}
+.hud b{display:block;color:var(--cyan);letter-spacing:.3em;font-size:11px;margin-bottom:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px;padding:10px 5vw 80px}
+.card{border:1px solid var(--line);background:#070b16;overflow:hidden;position:relative;transition:.25s}
+.card:hover{transform:translateY(-4px);border-color:#39ffea55;box-shadow:0 0 24px #39ffea22}
+.visual{height:230px;display:grid;place-items:center;background:radial-gradient(circle at 50% 30%,#2a120e,#070b16 68%)}
+.visual.hoodie{background:radial-gradient(circle at 50% 30%,#3a140c,#070b16 68%)}
+.visual.tee{background:radial-gradient(circle at 50% 30%,#12202a,#070b16 68%)}
+.visual.jacket{background:radial-gradient(circle at 50% 30%,#201018,#070b16 68%)}
+.visual.hat,.visual.bag{background:radial-gradient(circle at 50% 30%,#122418,#070b16 68%)}
+.meta{padding:12px;display:flex;justify-content:space-between;gap:8px;font-size:12px}
+.meta small{display:block;color:#6a8898;letter-spacing:.12em;margin-top:4px}
+.price{color:var(--cyan)}
+.id{position:absolute;top:8px;left:8px;font-size:10px;letter-spacing:.2em;color:#39ffea99}
+footer{padding:24px 5vw;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:#678;font-size:11px}
+@media(max-width:800px){.hero{grid-template-columns:1fr}nav{display:none}}
+</style>
+</head>
+<body>
+<div class="scan"></div>
+<header>
+  <div class="brand">SPEA<span>K</span>ER</div>
+  <nav>
+    <a href="#drop">DROP 01</a>
+    <a href="https://x.com/SpeakerNG1">@SpeakerNG1</a>
+  </nav>
+</header>
+<section class="hero">
+  <div>
+    <h1>THIRTY<br>PIECES.<br><i>ONE BIRD.</i></h1>
+    <p class="lede">Futureswear from the loner lane. Phoenix mark on every garment. Clarity is power.</p>
+  </div>
+  <div class="hud">
+    <b>SYSTEM // DROP 01</b>
+    SKUS 30<br>
+    COLOR VOID / EMBER<br>
+    ORIGIN NG<br>
+    SIGNAL @SpeakerNG1
+  </div>
+</section>
+<section class="grid" id="drop"></section>
+<footer><span>© 2026 SPEAKER</span><span>PHOENIX PROTOCOL</span></footer>
+<script>
+const bird=`<svg width="120" height="120" viewBox="0 0 200 200" fill="none"><path d="M100 12c6 28 28 46 56 58-30 8-42 28-48 62-6-34-18-54-48-62 28-12 50-30 40-58z" fill="#ff3b1f"/><path d="M100 62c4 22 18 36 36 44-18 6-26 20-30 46-4-26-12-40-30-46 18-8 32-22 24-44z" fill="#39ffea"/></svg>`;
+const items=[
+["Phoenix Hoodie","hoodie","45000"],["Ash Rise Hoodie","hoodie","48000"],["Quiet Fire Zip","hoodie","52000"],["Clarity Crop Hoodie","hoodie","42000"],["Loner Heavyweight","hoodie","50000"],
+["Speak Once Tee","tee","22000"],["Ember K Tee","tee","22000"],["Bird Chest Tee","tee","24000"],["Backmark Oversized Tee","tee","26000"],["Wash Black Tee","tee","22000"],
+["Longsleeve Ash","tee","28000"],["Thermal Rise","tee","32000"],["Jersey 01","tee","30000"],["Practice Jersey","tee","30000"],
+["Loner Cap","hat","12000"],["Phoenix 5-Panel","hat","14000"],["Ember Beanie","hat","10000"],["Ash Bucket","hat","14000"],
+["Cargo Ash","jacket","38000"],["Wide Black Cargo","jacket","40000"],["Track Pant Fire","jacket","36000"],["Short Mark","tee","20000"],["Mesh Short","tee","18000"],
+["Bomber Void","jacket","65000"],["Coach Jacket","jacket","55000"],["Puffer Ember","jacket","80000"],["Varsity Phoenix","jacket","70000"],
+["Tote Speak","bag","15000"],["Gym Sack Rise","bag","12000"],["Socks Pair 2","hat","6000"]
+];
+const g=document.getElementById("drop");
+items.forEach(([n,t,p],i)=>{
+g.insertAdjacentHTML("beforeend",`<article class="card"><div class="id">NO.${String(i+1).padStart(2,"0")}</div><div class="visual ${t}">${bird}</div><div class="meta"><div><b>${n}</b><small>${t.toUpperCase()} · PHOENIX MARK</small></div><div class="price">₦${Number(p).toLocaleString()}</div></div></article>`);
+});
+</script>
+</body>
+</html>

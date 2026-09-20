@@ -1,2 +1,5 @@
-# speaker-phoenix
-SPEAKER phoenix streetwear — 30 piece drop
+# SPEAKER Phoenix Drop
+
+30-piece streetwear site for @SpeakerNG1.
+
+Live on Vercel after deploy.
